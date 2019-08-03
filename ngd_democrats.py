@@ -107,7 +107,6 @@ def sleep(alpha, beta):
   rand = random.Random()
   time.sleep(rand.uniform(alpha, beta))
 
-
 def main():
    candinate_list =[
                   "Bill de Blasio", "Andrew Yang", "Marianne Williamson", 
