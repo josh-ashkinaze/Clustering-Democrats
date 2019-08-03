@@ -61,6 +61,7 @@ def calculate_NGD(w1, w2, n_retries=10):
     if not succesful:
       returns np.NaN
   """
+
   for attempt in range(n_retries):
     try:
       return NGD(w1, w2)
@@ -74,21 +75,21 @@ def calculate_NGD(w1, w2, n_retries=10):
 def pairwise_NGD(element_list, retries=10):
   """Compute pairwise NGD for a list of terms"""
   distance_matrix = collections.defaultdict(dict) # init a nested dict
-  for e1 in element_list:
+  for i in element_list:
     sleep(5, 10)
-    for e2 in element_list:
-      try: 
-        print(e1, e2)
-        distance_matrix[e1][e2] = distance_matrix[e2][e1]
-      except KeyError: 
-        distance_matrix[e1][e2] = calculate_NGD(e1, e2, retries)
+    for j in element_list:
+      try: # See if we already calculated NGD(j, i)
+        print(i, j)
+        distance_matrix[i][j] = distance_matrix[j][i]
+      except KeyError: # If not, calculate NGD(i, j)
+        distance_matrix[i][j] = calculate_NGD(i, j, retries)
   return distance_matrix
 
 def pairwise_NGD_to_df(distances):
   """Returns a dataframe of pairwise NGD calculations"""
-  df_data = {} #
-  for cand in distances:
-    df_data[cand] = [distances[cand][other] for other in distances]
+  df_data = {} 
+  for i in distances:
+    df_data[i] = [distances[i][j] for j in distances]
   df = pd.DataFrame(df_data)
   df.index = distances
   return df 
@@ -111,7 +112,7 @@ def main():
    candinate_list =[
                   "Bill de Blasio", "Andrew Yang", "Marianne Williamson", 
                   "Elizabeth Warren", "Tom Steyer", "Joe Sestak", 
-                  "Tim Ryan", "Beto O’Rourke", "Seth Moulton", 
+                  "Tim Ryan", "Beto O Rourke", "Seth Moulton", 
                   "Jay Inslee", "Amy Klobuchar", "Wayne Messam", 
                   "Michael Bennet", "Joe Biden", "Cory Booker", 
                   "Steve Bullock", "Pete Buttigieg", "Julian Castro", 
