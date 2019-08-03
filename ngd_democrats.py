@@ -109,14 +109,16 @@ def sleep(alpha, beta):
 
 
 def main():
-   candinate_list =["Bill de Blasio", "Andrew Yang", "Marianne Williamson", 
+   candinate_list =[
+                  "Bill de Blasio", "Andrew Yang", "Marianne Williamson", 
                   "Elizabeth Warren", "Tom Steyer", "Joe Sestak", 
                   "Tim Ryan", "Beto O’Rourke", "Seth Moulton", 
                   "Jay Inslee", "Amy Klobuchar", "Wayne Messam", 
                   "Michael Bennet", "Joe Biden", "Cory Booker", 
                   "Steve Bullock", "Pete Buttigieg", "Julian Castro", 
                   "John Delaney", "Tulsi Gabbard", "Kirsten Gillibrand", 
-                  "Kamala Harris", "John Hickenlooper", "Bernie Sanders"]
+                  "Kamala Harris", "John Hickenlooper", "Bernie Sanders"
+  ]
 
    distances = pairwise_NGD(candinate_list)
    distances_df = pairwise_NGD_to_df(distances)
@@ -126,5 +128,3 @@ main()
 
 if __name__ == "__main__":
   print("This is a script for calculating NGD.")
-
-   
