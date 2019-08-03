@@ -32,7 +32,6 @@ def NGD(w1, w2):
   """
   N = 25270000000.0 # Number of results for "the", proxy for total pages
   N = math.log(N,2) 
-
   if w1 != w2:
     f_w1 = math.log(number_of_results(w1),2)
     f_w2 = math.log(number_of_results(w2),2)
