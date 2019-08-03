@@ -46,15 +46,14 @@ def calculate_NGD(w1, w2, n_retries=10):
   """ 
   Attempt to calculate NGD. 
 
-  We will attempt to calculate NGD, trying n_retries. (Sometimes Google throws
-  captcha pages but you can just wait and try again). And iff all attempts fail, 
+  We will attempt to calculate NGD, trying `n_retries`. (Sometimes Google throws
+  captcha pages. But we will just wait and try again). Iff all attempts fail, 
   then we'll return NaN for this pairwise comparison. 
 
   Params: 
     w1 (str): word 1 
     w2 (str): word 2
     retries (int): Number of attempts to retry before returning NaN 
-
   Returns:
     if succesful:
       returns NGD
@@ -122,7 +121,7 @@ def main():
 
    distances = pairwise_NGD(candinate_list)
    distances_df = pairwise_NGD_to_df(distances)
-   distances_df.to_csv("candinate_distances.csv")
+   distances_df.to_csv("distances.csv")
 
 main()
 
