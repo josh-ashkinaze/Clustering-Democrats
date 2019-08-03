@@ -122,7 +122,7 @@ def main():
 
    distances = pairwise_NGD(candinate_list)
    distances_df = pairwise_NGD_to_df(distances)
-   distances_df.to_csv("distances.csv")
+   distances_df.to_csv("candinate_distances.csv")
 
 main()
 
