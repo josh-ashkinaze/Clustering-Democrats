@@ -24,6 +24,7 @@ Andrew Yang is the most unique candidate. He had the highest average NGD to othe
 
 ## Files 
 * ```ngd_democrats.py``` is a script to calculate the pairwise NGD for 24 candidates 
+* ```distances.csv``` is the NGD for 24 candidates
 * ```candidate_analysis.ipynb``` is a Python notebook of analysis 
 
 
