@@ -107,7 +107,7 @@ def sleep(alpha, beta):
   time.sleep(rand.uniform(alpha, beta))
 
 def main():
-   candinate_list =[
+   candidate_list =[
                   "Bill de Blasio", "Andrew Yang", "Marianne Williamson", 
                   "Elizabeth Warren", "Tom Steyer", "Joe Sestak", 
                   "Tim Ryan", "Beto O Rourke", "Seth Moulton", 
@@ -118,7 +118,7 @@ def main():
                   "Kamala Harris", "John Hickenlooper", "Bernie Sanders"
   ]
 
-   distances = pairwise_NGD(candinate_list)
+   distances = pairwise_NGD(candidate_list)
    distances_df = pairwise_NGD_to_df(distances)
    distances_df.to_csv("distances.csv")
 
