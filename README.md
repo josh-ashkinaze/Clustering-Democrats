@@ -2,11 +2,10 @@
 
 [Normalized Google Distance (NGD)](https://github.com/josh-ashkinaze/Normalized-Google-Distance)
 
-In this analysis, I use Normalized Google Distance (NGD) to look at which Democrats we group together. 
+In this analysis, I use [Normalized Google Distance (NGD)](https://github.com/josh-ashkinaze/Normalized-Google-Distance)
+) to look at which Democrats we group together. 
 
-Read my blog for a write-up and look at the ipynb notebook for analysis! 
-
-Blog entry: https://www.joshash.space/data-science/clusters-of-democratic-candidates-1
+[Read my blog](https://www.joshash.space/data-science/clusters-of-democratic-candidates-1) for a write-up, and look at the ipynb notebook for analysis! 
 
 
 ## My questions
