@@ -1,5 +1,7 @@
 # Clustering Democrats
 
+[Normalized Google Distance (NGD)](https://github.com/josh-ashkinaze/Normalized-Google-Distance)
+
 In this analysis, I use Normalized Google Distance (NGD) to look at which Democrats we group together. 
 
 Read my blog for a write-up and look at the ipynb notebook for analysis! 
