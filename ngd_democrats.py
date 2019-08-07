@@ -121,8 +121,6 @@ def main():
    distances = pairwise_NGD(candidate_list)
    distances_df = pairwise_NGD_to_df(distances)
    distances_df.to_csv("distances.csv")
-
-main()
-
+  
 if __name__ == "__main__":
-  print("This is a script for calculating NGD.")
+  main()
